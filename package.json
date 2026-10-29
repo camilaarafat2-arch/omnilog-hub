@@ -1,0 +1,19 @@
+{
+  "name": "omnilog-hub",
+  "version": "1.0.0",
+  "description": "Sistema Corporativo Integrado de Gestão Logística,\r Cadeia de Suprimentos e E-commerce Omnichannel.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "mysql2": "^3.24.6"
+  }
+}

@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OmniLog Hub | Gestão Logística</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="topo">
+        <div>
+            <h1>OmniLog Hub</h1>
+            <p>Sistema de Gestão Logística</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="boas-vindas">
+            <h2>Painel de Controle</h2>
+            <p>Bem-vindo ao seu sistema de gestão logística.</p>
+        </section>
+
+        <section class="cards">
+            <article class="card">
+                <h3>Pedidos</h3>
+                <p>Consulte os pedidos cadastrados no banco de dados.</p>
+                <button onclick="document.getElementById('secaoPedidos').scrollIntoView({behavior:'smooth'})">
+                    Ver pedidos
+                </button>
+            </article>
+
+            <article class="card">
+                <h3>Faturamento</h3>
+                <p>Acompanhe os valores dos pedidos registrados.</p>
+                <button onclick="document.getElementById('secaoPedidos').scrollIntoView({behavior:'smooth'})">
+                    Consultar valores
+                </button>
+            </article>
+
+            <article class="card">
+                <h3>Auditoria</h3>
+                <p>Acompanhe os registros de auditoria do banco.</p>
+                <p class="observacao">Consulta disponível em uma próxima etapa.</p>
+            </article>
+        </section>
+
+        <section class="lista-pedidos" id="secaoPedidos">
+            <h2>Pedidos cadastrados</h2>
+            <p>Informações carregadas do banco de dados.</p>
+
+            <div id="listaPedidos" aria-live="polite">
+                Carregando pedidos...
+            </div>
+        </section>
+
+        <p id="mensagem" role="status"></p>
+    </main>
+
+    <footer>
+        <p>OmniLog Hub &copy; 2026 — Sistema de Gestão Logística</p>
+    </footer>
+</body>
+</html>

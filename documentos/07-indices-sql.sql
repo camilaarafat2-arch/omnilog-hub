@@ -1,0 +1,4 @@
+-- Projeto: OMNILOG HUB
+-- UC3: Planejamento e administração de banco de dados
+-- Objetivo: otimização de consultas com índices B-TREE e FULLTEXT
+-- SGBD: MySQL
