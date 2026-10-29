@@ -17,6 +17,16 @@ describe("Testes do servidor OmniLog Hub", () => {
         expect(resposta.status).toBe(200);
         expect(resposta.body.sucesso).toBe(true);
         expect(Array.isArray(resposta.body.pedidos)).toBe(true);
+        
+expect(resposta.body.pedidos.length).toBeGreaterThan(0);
+
+const pedido = resposta.body.pedidos[0];
+
+expect(pedido).toHaveProperty("id_pedido");
+expect(pedido).toHaveProperty("id_cliente");
+expect(pedido).toHaveProperty("status");
+expect(pedido).toHaveProperty("valor_produtos");
+
     });
 
 });
