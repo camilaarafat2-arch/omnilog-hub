@@ -40,7 +40,6 @@ app.get("/pedidos", async (req, res) => {
         });
     }
 });
-
 async function iniciarServidor() {
     try {
         const connection = await conexao.getConnection();
@@ -57,5 +56,8 @@ async function iniciarServidor() {
     }
 }
 
-iniciarServidor();
-require("dotenv").config();
+if (require.main === module) {
+    iniciarServidor();
+}
+
+module.exports = app;
